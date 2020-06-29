@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common01.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/captcha.js"></script>
+    <script src="../js/md5.js"></script>
+
+</head>
+
+<body>
+    <!-- heard -->
+    <div id="header">
+        <div class="header-wrap">
+            <div class="header-logo">
+                <a href="./index.html" title="百济网上药店-网上买药上百济药房网"><img src="../img/logo.jpg" alt=""></a>
+            </div>
+            <div class="header-right">
+                <span>
+                    已有账号？
+                    <a href="./login.html">请登录 ></a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+    <div id="main">
+        <div class="main-wrap">
+            <div class="main-form">
+                <div class="box">
+                    <p>
+                        <em></em>
+                        <input id="userName" type="text" placeholder="请设置您的用户名(2-6位字母区分大小写)" maxlength="11">
+                    </p>
+                    <i>用户名不符合规范</i>
+                </div>
+                <div class="box">
+                    <p>
+                        <em></em>
+                        <input id="userId" type="text" placeholder="请输入您的手机号码" maxlength="11">
+                    </p>
+                    <i>手机号码不符合规范</i>
+                </div>
+                <div id="yzm-box" class="box">
+                    <p>
+                        <em></em>
+                        <input id="imageCode" type="text" placeholder="请输入图形验证码" maxlength="11">
+                    <div class="image-box">
+                        <canvas width="160" height="45" id="captcha"></canvas>
+                    </div>
+                    </p>
+                    <i>图形验证码不正确</i>
+                </div>
+                <div class="box">
+                    <p>
+                        <em></em>
+                        <input id="passwordA" type="text" placeholder="请设置密码长度3-12个字符(大小写字母和数字)" maxlength="11">
+                        <img src="" alt="">
+                    </p>
+                    <i>密码不符合规范</i>
+                </div>
+                <div class="box">
+                    <p>
+                        <em></em>
+                        <input id="passwordB" type="text" placeholder="请再次输入密码" maxlength="11">
+                    </p>
+                    <i>两次密码输入不相同</i>
+                </div>
+                <a id="goBtn" href="#">立即注册</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p>
+            康德乐大药房－国家药监局认证的合法网上药店，专科连锁药房，专注于经营重大慢性疾病用药。粤ICP备11004502号-7 ©2005-2019 康德乐网上药店版权所有，并保留所有权利。
+        </p>
+        <div class="footer-ul">
+            <ul>
+                <li><a href="https://www.baiji.com.cn/baiji.html#abyfzz">企业营业执照</a></li>
+                <li><a href="https://www.baiji.com.cn/baiji.html#abyfzz">互联网药品交易服务资格证书</a></li>
+                <li><a href="https://www.baiji.com.cn/baiji.html#abyfzz">互联网药品信息服务资格证书</a></li>
+                <li><a href="https://www.baiji.com.cn/baiji.html#abyfzz">药品经营许可证</a></li>
+            </ul>
+        </div>
+        <div class="footer-icon">
+            <a href="http://gdga.gd.gov.cn/"></a>
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo"></a>
+            <a href="https://v.anquan.org/cert/site/?site=www.baiji.com.cn"></a>
+            <a href="https://v.anquan.org/cert/site/?site=www.baiji.com.cn"></a>
+        </div>
+    </footer>
+</body>
+
+<script src="../js/jquery-3.4.1.js"></script>
+<script src="../js/register.js"></script>
+
+</html>
