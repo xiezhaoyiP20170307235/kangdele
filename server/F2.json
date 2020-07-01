@@ -1,0 +1,224 @@
+{
+    "title": "2F 专科用药",
+    "srcT": "https://imgcdn.baiji.com.cn/data/afficheimg/1545275897982654656.jpg",
+    "srcB": "https://imgcdn.baiji.com.cn/data/afficheimg/1576137454475528114.jpg",
+    "types": [
+        "肿瘤科",
+        "肝病科",
+        "皮肤科",
+        "神经精神科",
+        "风湿科"
+    ],
+    "data": [
+        [
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201901/goods_img/7054_G_1546413384516.jpg",
+                "name": "留可然 2mg*25片",
+                "price": "228.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201802/goods_img/7138_G_1518069065950.jpg",
+                "name": "多吉美 200mg*60片",
+                "price": "价中"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201907/goods_img/7164_G_1563868933347.jpg",
+                "name": "复方环磷酰胺片 50mg:50mg*24片",
+                "price": "128.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201911/goods_img/7598_G_1573710045561.jpg",
+                "name": "参一胶囊 10mg*16粒",
+                "price": "价中"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201709/goods_img/12472_G_1504774837936.jpg",
+                "name": "清肺散结丸 3g*6瓶",
+                "price": "699.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/202005/goods_img/7924_G_1590643628326.jpg",
+                "name": "仙芝楼牌灵芝孢子油软胶囊 500mg*30粒*2瓶",
+                "price": "2280.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201802/goods_img/8076_G_1518075506643.jpg",
+                "name": "益肺清化膏 120g*2瓶",
+                "price": "680.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201807/goods_img/8363_G_1530853851252.jpg",
+                "name": "巯嘌呤片 50mg*100片",
+                "price": "198.00"
+            }
+        ],
+        [
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201709/goods_img/12094_G_1504506025803.jpg",
+                "name": "人血白蛋白 20％，50ml",
+                "price": "420"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201904/goods_img/6864_G_1554776375302.jpg",
+                "name": "日达仙 1.6mg*2支",
+                "price": "1180.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201704/goods_img/6980_G_1491011211557.jpg",
+                "name": "博路定 0.5mg*7片",
+                "price": "190.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201710/goods_img/12525_G_1507624661790.jpg",
+                "name": "和恩 0.5mg*14片",
+                "price": "100.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201710/goods_img/7684_G_1508135760765.jpg",
+                "name": "安络化纤丸 6g*10袋",
+                "price": "72.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201802/goods_img/7021_G_1518067969953.jpg",
+                "name": "贺维力 10mg*14片",
+                "price": "225.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201911/goods_img/8709_G_1573809274454.jpg",
+                "name": "雷易得 0.5mg*14片",
+                "price": "175.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201710/goods_img/14922_G_1509082730641.jpg",
+                "name": "臌症丸 0.13g*180粒",
+                "price": "288.00"
+            }
+        ],
+        [
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201709/goods_img/6200_G_1504772889052.jpg",
+                "name": "达力士 15g:0.75mg",
+                "price": "76.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201607/goods_img/12734_G_1468208761624.jpg",
+                "name": "金迪银 15g:0.75mg",
+                "price": "62.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201708/goods_img/6192_G_1502851767331.jpg",
+                "name": "芭克硅胶软膏 15g",
+                "price": "498.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201909/goods_img/6000_G_1568704677796.jpg",
+                "name": "启悦 1mg*28片",
+                "price": "98.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201911/goods_img/6164_G_1573709511541.jpg",
+                "name": "普特彼 0.1％（10g：10mg）",
+                "price": "157.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201503/goods_img/6221_G_1427189231037.jpg",
+                "name": "康瑞保 10g",
+                "price": "68.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201709/goods_img/6376_G_1505290574190.jpg",
+                "name": "五妙水仙膏 5g",
+                "price": "238.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/202004/goods_img/10981_G_1588052027536.jpg",
+                "name": "竹红菌素软膏 4g*4支",
+                "price": "326.00"
+            }
+        ],
+        [
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201712/goods_img/5997_G_1513835756092.jpg",
+                "name": "万全力太 50mg*24片",
+                "price": "价中"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/202001/goods_img/6338_G_1578278709125.jpg",
+                "name": "七十味珍珠丸 1g*6丸",
+                "price": "价中"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201710/goods_img/6011_G_1509000677703.jpg",
+                "name": "欧力停（欧立停） 5mg*3片",
+                "price": "65.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201701/goods_img/6114_G_1484291946544.jpg",
+                "name": "乐瑞卡 150mg*8粒",
+                "price": "153.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201712/goods_img/15522_G_1512358108254.jpg",
+                "name": "九味熄风颗粒 6g*6袋",
+                "price": "248.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201803/goods_img/15736_G_1522032975398.jpg",
+                "name": "心达悦 10mg*14片",
+                "price": "573.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201903/goods_img/16296_G_1553240659687.jpg",
+                "name": "优普洛 4.5mg/10cm2 (释药量2mg/24h):7贴",
+                "price": "154.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201902/goods_img/6520_G_1551259381135.jpg",
+                "name": "益智康脑丸 3g*12丸",
+                "price": "60.00"
+            }
+        ],
+        [
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201911/goods_img/11468_G_1573194369351.jpg",
+                "name": "黑骨藤追风活络胶囊 0.3*12粒*6板",
+                "price": "70.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201805/goods_img/9869_G_1527571017329.jpg",
+                "name": "安康信 60mg*5片",
+                "price": "47.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201802/goods_img/7281_G_1518071287556.jpg",
+                "name": "泛福舒 7mg（成人规格）*10粒",
+                "price": "122.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201703/goods_img/7339_G_1488951609759.jpg",
+                "name": "普利莫 (7ml:400mg)*10瓶",
+                "price": "125.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201907/goods_img/7582_G_1563863686876.jpg",
+                "name": "滑膜炎片 0.5g*18片",
+                "price": "12.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201704/goods_img/7717_G_1492485967164.jpg",
+                "name": "健骨生丸 4.5g*9袋",
+                "price": "295.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201708/goods_img/7754_G_1502852373341.jpg",
+                "name": "十五味乳鹏丸 0.3g*48丸",
+                "price": "90.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201710/goods_img/9565_G_1508115947407.jpg",
+                "name": "福美加 (70mg/2800IU)*1片",
+                "price": "68.00"
+            }
+        ]
+    ]
+}

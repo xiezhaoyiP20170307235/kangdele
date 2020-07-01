@@ -1,0 +1,50 @@
+{
+    "title": "1F 男性专场",
+    "srcT": "https://imgcdn.baiji.com.cn/data/afficheimg/1548753108523952341.jpg",
+    "srcB": "https://imgcdn.baiji.com.cn/data/afficheimg/1576654988931030215.jpg",
+    "types": [],
+    "data": [
+        
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201907/goods_img/16882_G_1562220863681.jpg",
+                "name": "欣炜歌 20mg*1片",
+                "price": "79.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201712/goods_img/11956_G_1512091919794.jpg",
+                "name": "必利劲 30mg*3片",
+                "price": "228.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201707/goods_img/12791_G_1501466537136.jpg",
+                "name": "金戈 50mg*10片",
+                "price": "345.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201708/goods_img/5974_G_1503985425899.jpg",
+                "name": "万艾可 100mg*5片",
+                "price": "465.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201909/goods_img/6000_G_1568704677796.jpg",
+                "name": "启悦 1mg*28片",
+                "price": "98.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201806/goods_img/6008_G_1529552363629.jpg",
+                "name": "希爱力 20mg*4片",
+                "price": "455.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201901/goods_img/6295_G_1547102046824.jpg",
+                "name": "伊木萨克片 0.5g*6片",
+                "price": "158.00"
+            },
+            {
+                "src": "https://imgcdn.baiji.com.cn/images/201707/goods_img/8355_G_1501480983490.jpg",
+                "name": "龟龄集 0.3g*30粒",
+                "price": "598.00"
+            }
+        
+    ]
+}

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lis = Array.from(document.querySelectorAll(".wr")[1].querySelectorAll("li"))
+        let arr = []
+        li = lis.slice(1,)
+        li.forEach(item => {
+            let obj ={}
+            obj.src = item.querySelector("img").src
+            obj.name = item.querySelector(".proname").innerText
+            obj.price = item.querySelector(".price_info").innerText.substring(1)
+            arr.push(obj)
+        });
+        
+        let lis = Array.from(document.querySelectorAll(".wr")[2].querySelectorAll(".sphpro")[0].querySelectorAll("li"))
+        let arr = []
+        lis = lis.slice(1,)
+        lis.forEach(item => {
+            let obj ={}
+            obj.src = item.querySelector("img").src
+            obj.name = item.querySelector(".proname").innerText
+            obj.price = item.querySelector(".price_info").innerText.substring(1)
+            arr.push(obj)
+        });
+        JSON.stringify(arr)
+
+        let lis = Array.from(document.querySelectorAll(".wr")[2].querySelectorAll(".sphpro")[3].querySelectorAll("li"))
+        let arr = []
+        lis = lis.slice(1,)
+        lis.forEach(item => {
+            let obj ={}
+            obj.src = item.querySelector("img").src
+            obj.name = item.querySelector(".proname").innerText
+            obj.price = item.querySelector(".price_info").innerText.substring(1)
+            arr.push(obj)
+        });
+        JSON.stringify(arr)
+
+            let as =Array.from(document.querySelector(".linkcon").querySelectorAll("a"))
+            let arr = []
+            as.forEach(a => {
+                let obj ={}
+                obj.text = a.innerText
+                arr.push(obj)
+            });
+        JSON.stringify(arr)
+
+    </script>
+    
+
+</body>
+</html>
