@@ -96,6 +96,7 @@ $(() => {
             console.log(data)
             if (data.status == "success") {
                alert("恭喜您，注册成功！")
+               location.href="../src/login.html"
             } else {
                 alert(data.msg)
             }

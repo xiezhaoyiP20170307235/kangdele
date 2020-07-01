@@ -83,7 +83,7 @@ $(()=>{
         isTrue() 
         
         let userid = $.trim($("#userId").val())
-        let password = $.trim($("#password").val())
+        let password = md5($.trim($("#password").val())).slice(0, 15)
         console.log(userid,password)
 
         $.ajax({

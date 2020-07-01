@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* 版心区域 */
+.header-wrap,.logo-wrap,.nav-wrap{
+    width: 1210px;
+    margin: 0 auto;
+}
+
+/* banner */
+#banner{
+    width: 100%;
+    min-width: 1210px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+.banner-box>ul{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+}
+.banner-box>ul>li{
+    opacity: 0;
+    width: 100% !important;
+    height: 450px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.banner-box>ul>li:nth-of-type(1){
+    opacity: 1!important;
+    background: rgb(218, 222, 223);
+}
+.banner-box>ul>li:nth-of-type(2){
+    background: rgb(215, 236, 254);
+}
+.banner-box>ul>li:nth-of-type(3){
+    background: rgb(215, 236, 254);
+}
+.banner-box>ul>li:nth-of-type(4){
+    background: rgb(223, 236, 254);
+}
+.banner-box>ul>li:nth-of-type(5){
+    background: rgb(196, 237, 255);
+}
+.banner-box>ul>li:nth-of-type(7){
+    background: rgb(240, 235, 232);
+}
+.banner-box>ul>li:nth-of-type(6){
+    background: rgb(0, 24, 99);
+}
+.img-box{
+    width: 830px;
+    height: 450px;
+    margin: 0 auto;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.img-box>img{
+    width: 100%;
+    height: 100%;
+}
+.banner-btn{
+    width: 820px;
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    margin-left: -415px;
+}
+.banner-btn>a{
+    color: #555555;
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    opacity: 0.3;
+    cursor: pointer;
+    display: none;
+}
+#banner:hover .banner-btn>a{
+    display: block;
+}
+.banner-btn>a:hover{
+    opacity: 0.8;
+}
+.prev{
+    left: 0;
+    background: url(../img/jiantou.png) no-repeat 0 0;
+}
+.next{
+    right: 0;
+    background: url(../img/jiantou.png) no-repeat -40px 0;
+}
+.banner-lis{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -100px;
+}
+.banner-lis>ul>li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #bbb;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
+.banner-lis>ul>li:first-child{
+    border-color: #377bee;
+}
+
+.stores-box{
+    top: 15px;
+    right: 154px;
+    position: absolute;
+    background: skyblue;
+    width: 200px;
+    height: 430px;
+    background: url(../img/index-shop02.jpg) left bottom no-repeat #fff;
+}
+.sbox-title{
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #e6e6e6;
+    text-indent: 12px;
+    font-family: 'Microsoft yahei';
+    color: #101010;
+    font-size: 14px;
+}
+.sbox-ul{
+    position: relative;
+}
+.sbox-jt{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 172px;
+    background-image: url(../img/indexicon.png);
+    background-repeat: no-repeat;
+}
+.sbox-l{
+    background-position: -419px -2px;
+    cursor: default;
+     left: 76px;
+}
+.sbox-r{
+    left: 109px;
+    background-position: -482px -2px;
+}
+.sbox-con{
+    height: 168px;
+    margin: 6px;
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+}
+.sbox-con>ul{
+    width: 188px;
+}
+.sbox-con>ul>li{
+    width: 51px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #909090;
+    float: left;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: '宋体';
+    overflow: hidden;
+    padding: 0px 4.5px;
+    margin: 2px 1px 2px 1px;
+}
+.sbox-con>ul>li:first-child{
+    background: #7ebcff;
+    color: #fff;
+}
+.sbox-ct{
+    padding: 6px;
+}
+.sbox-ct>div:nth-of-type(1){
+    width: 188px;
+    height: 80px;
+    overflow: hidden;
+}
+.sbox-ct>div:nth-of-type(1)>img{
+    height: 100px;
+}
+.sbox-ct>div:nth-of-type(2){
+    font-size: 12px;
+    font-family: '宋体';
+    margin-top: 15px;
+}
+.sbox-ct>div:nth-of-type(2)>p{
+    line-height: 14px;
+    padding: 2px 0px 2px 22px;
+    display: block;
+    color: #fff;
+    position: relative;
+    margin-right: -5px;
+}
+.sbox-ct>div:nth-of-type(2)>p>s{
+    width: 14px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    left: 2px;
+    background-image: url(../img/indexicon.png);
+    background-repeat: no-repeat;
+}
+.dh{
+    background-position: -254px -2px;
+    top: 2px;
+}
+.db{
+    background-position: -276px -0px;
+    top: 1px;
+}
