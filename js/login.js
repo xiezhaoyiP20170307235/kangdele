@@ -75,29 +75,41 @@ $(()=>{
             $(this).siblings("label").css({ "display": "none" })
         }
     })
-
     // 登录按钮
     $("#goBtn").click(function(){
         console.log("!!!")
-        
+        // 前端正则验证
         isTrue() 
         
         let userid = $.trim($("#userId").val())
         let password = md5($.trim($("#password").val())).slice(0, 15)
         console.log(userid,password)
-
+        // 发送请求查看手机号码是否存在
         $.ajax({
             type: "post",
             url: "../server/login.php",
             data: `userid=${userid}&password=${password.slice(0,15)}`,
             dataType: "json",
         }).done(data=>{
+            console.log(data)
             if(data.status == "success"){
-                alert(data.msg);
-                location.href="../src/index.html"
+                //登录成功
+                // (1)把用户手机号码和用户名保存起来
+
+                // (2)跳转首页
+                // alert(data.msg);
+                // location.href="../src/index.html"
             }else{
                 alert(data.msg)
             }
         })
+
+        // 
+
+
+
+
+
+
     })
 })

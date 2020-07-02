@@ -30,7 +30,7 @@ $(() => {
     let options = {
         // 【1】、用户名
         "userName": {
-            reg: `/^[a-zA-Z]{2,6}$/.test(val)`
+            reg: `/^[\u4e00-\u9fa5_a-zA-Z0-9]{2,10}$/.test(val)`
         },
         // 【2】手机号码验证
         "userId": {

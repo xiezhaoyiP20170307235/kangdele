@@ -697,3 +697,28 @@ span:hover div{
 .about-icon>a:nth-child(2){
     width: 157px!important;
 }
+.item-show>div{
+    width: 208px;
+    background: #FFF;
+    border-bottom: 1px solid #dadada;
+    border-top: 1px solid #dadada;
+    margin-top: -1px;
+    font-family: '宋体';
+}
+.item-show>div>h3{
+    height: 35px;
+    line-height: 35px;
+    background-color: #f7f7f7;
+    padding: 0 7px 0 26px;
+    cursor: pointer;
+    font: normal 14px/25px \5fae\8f6f\96c5\9ed1;
+}
+.item-show>div>h3>b{
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 11px 8px 0 0;
+    background-position: -79px -70px;
+    overflow: hidden;
+    cursor: pointer;
+}

@@ -9,7 +9,7 @@ $password = $_REQUEST["password"];
 /* 如果密码正确，应该返回正确的提示：登录成功！！！ */
 include_once "./connectDB.php";
 
-$sql = "SELECT * FROM `user` WHERE userid = '$userid'";
+$sql = "SELECT * FROM `user` WHERE user_id = '$userid'";
 
 $r = mysqli_query($db,$sql);
 
@@ -18,7 +18,8 @@ $num = mysqli_num_rows($r);  //该方法得到的是记录的条数：$r["num_ro
 if($num == 1){
     $data = mysqli_fetch_all($r,MYSQLI_ASSOC);
     $data = $data[0];
-    if($password === $data['password']){
+    if($password === $data['user_password']){
+        
         echo '{"status":"success","msg":"登录成功！"}';
     }else{
         echo '{"status":"error","msg":"密码不正确！"}';
