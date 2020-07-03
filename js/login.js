@@ -92,15 +92,20 @@ $(()=>{
             dataType: "json",
         }).done(data=>{
             console.log(data)
+            // console.log(data.data)
             if(data.status == "success"){
                 //登录成功
                 // (1)把用户手机号码和用户名保存起来
-
+                    // 保存cookie
+                    console.log("cookie",document.cookie)
+                    Cookie.setItem("userId",data.data.userId,7)
+                    Cookie.setItem("username",data.data.username,7)
+                    console.log("cookie",document.cookie)
                 // (2)跳转首页
-                // alert(data.msg);
-                // location.href="../src/index.html"
+                alert(data.data.msg);
+                location.href="../src/index.html"
             }else{
-                alert(data.msg)
+                alert(data.data.msg)
             }
         })
 

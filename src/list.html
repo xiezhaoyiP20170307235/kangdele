@@ -25,9 +25,9 @@
                 </div>
             </div>
             <div class="hwrap-r">
-                <a href="./login.html">请登录</a>
-                <a href="./register.html">免费注册</a>
-                <a href="./car.html">
+                <a class="userName" href="./login.html">请登录</a>
+                <a class="reggo" style="cursor: pointer;" >免费注册</a>
+                <a href="./cart.html">
                     <s></s>
                     购物车
                     <span>0</span>
@@ -883,14 +883,14 @@
             <div class="r-nav">
                 <div class="nav-l">
                     <ul>
-                        <li>排序：</li>
-                        <li><a href="#">销量</a></li>
-                        <li><a href="#">最新</a></li>
+                        <li class="cur02" data-sort="default">默认排序：</li>
+                        <li data-sort="price_asc"><a>价格从低到高</a></li>
+                        <li data-sort="price_desc"><a>价格从高到低</a></li>
                     </ul>
                 </div>
                 <div class="nav-r">
-                    <div class="nav-ra">总计893个记录</div>
-                    <div class="nav-rb"><strong>1</strong>/32</div>
+                    <div class="nav-ra">总计140个记录</div>
+                    <div class="nav-rb"><strong>1</strong>/5</div>
                     <div class="nav-rc"><a>下一页<s></s></a></div>
                     <div class="nav-rd">
                         第几
@@ -908,20 +908,17 @@
             <div class="r-bottom">
                 <div class="rbottom-page">
                     <div class="page-a">
-                        总计 893 个记录
+                        总计 140 个记录
                     </div>
                     <div class="page-b">
                         <strong>1</strong>
-                        /32
+                        /5
                     </div>
                     <div class="page-c">
-                        <a class="cur" href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a class="a-next" href="#">下一页<s></s></a>
-                        <a href="#">末页</a>
+                        <a id="a-prev">上一页</a>
+                        <ul class="page-c-ul">
+                        </ul>
+                        <a id="a-next">下一页</a>
                     </div>
                     <div class="page-d">
                         第几
@@ -933,11 +930,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
 
 
     <!-- footer -->
@@ -1064,6 +1056,7 @@
 
     <script src="../js/jquery-3.4.1.js"></script>
     <script src="../js/commonindex.js"></script>
+    <script src="../js/Cookie.js"></script>
     <script src="../js/list.js"></script>
 </body>
 

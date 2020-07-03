@@ -182,7 +182,7 @@ class FLinks{
     renderUI() {
         let ula = this.data.map(item=>`<a href="">${item.text}</a>`).join("")
         // let typeHtml = this.data.types.map((item, idx) => `<li class="${idx === 0 ? "active" : ""}">${item}</li>`).join("")
-        console.log(ula)
+        // console.log(ula)
 
         let html = `
             <a href="">${ula}</a>

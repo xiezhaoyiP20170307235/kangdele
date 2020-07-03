@@ -431,25 +431,33 @@
     margin-top: 10px;
 }
 .nav-l{
-    width: 270px;
+    width: 350px;
     height: 40px;
     float: left;
 }
 .nav-l>ul>li{
-    width: 60px;
+    width: 85px;
+    margin-right: 10px;
     line-height: 40px;
     float: left;
     text-align: center;
+    cursor: pointer;
+}
+.nav-l>ul>li:nth-of-type(1){
+    margin: 0;
 }
 .nav-l>ul>li:nth-of-type(2)>a{
     padding-right: 13px;
-    background: url(https://imgcdn.baiji.com.cn/bj_img/pxar.gif) right 3px no-repeat;
-    color: #ff5c4d;
+    background: url(https://imgcdn.baiji.com.cn/bj_img/pxbr.gif) right 3px no-repeat;
+   
 }
 .nav-l>ul>li:nth-of-type(3)>a{
     padding-right: 13px;
-    background: url(https://imgcdn.baiji.com.cn/bj_img/pxa.gif) right 2px no-repeat;
-    color: #555555;
+    background: url(https://imgcdn.baiji.com.cn/bj_img/pxar.gif) right 2px no-repeat;
+  
+}
+.cur02{
+    color:#ff5c4d!important;
 }
 .nav-r{
     height: 40px;
@@ -733,7 +741,11 @@
     float: left;
     margin-left: 5px;
 }
-.page-c>a{
+.page-c>ul{
+    float: left;
+}
+.page-c>ul>li{
+    float: left;
     height: 25px;
     line-height: 25px;
     width: 25px;
@@ -743,24 +755,21 @@
     margin-right: 5px;
     margin-top: 8px;
     background: #FFF;
+    cursor: pointer;
 }
-.a-next{
-    width: 55px!important;
-    text-align: right!important;
+.page-c>a{
+    height: 25px;
+    line-height: 25px;
+    width: 60px;
+    text-align: center;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    margin-top: 8px;
+    background: #FFF;
+    cursor: pointer;
 }
-.page-c>a>s{
-    width: 0;
-    height: 0;
-    line-height: 0;
-    font-size: 0;
-    display: inline-block;
-    border-width: 5px;
-    border-style: dashed solid;
-    border-color: transparent;
-    border-left-color: #CCC;
-    border-right-style: dashed;
-    margin-left: 0px;
-}
+
 .cur{
     background: #7ebcff!important;
     color: #FFFFFF;

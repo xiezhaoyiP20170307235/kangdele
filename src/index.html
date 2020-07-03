@@ -25,9 +25,9 @@
                 </div>
             </div>
             <div class="hwrap-r">
-                <a href="./login.html">请登录</a>
-                <a href="./register.html">免费注册</a>
-                <a href="./car.html">
+                <a class="userName" href="./login.html">请登录</a>
+                <a class="reggo" style="cursor: pointer;" >免费注册</a>
+                <a href="./cart.html">
                     <s></s>
                     购物车
                     <span>0</span>
@@ -109,7 +109,6 @@
             <div class="l-logo2"><img src="../img/indexlogo2.jpg" alt=""></div>
         </div>
     </div>
-    <!-- nav !!!!!!! li的a记得添加商品列表-->
     <div id="nav">
         <div class="nav-wrap">
             <div class="item-nav">
@@ -951,6 +950,7 @@
 
     <script src="../js/jquery-3.4.1.js"></script>
     <script src="../js/commonindex.js"></script>
+    <script src="../js/Cookie.js"></script>
     <script src="../js/lunbo.js"></script>
     <script src="../js/FJson.js"></script>
     <script>
@@ -975,8 +975,8 @@
 
             $.getJSON("../server/Flinks01.json", (data) => (new FLinks(data)).init())
 
-        })
 
+        })
     </script>
 </body>
 
