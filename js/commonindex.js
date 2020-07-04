@@ -1,9 +1,9 @@
 $(() => {
     // 二级导航
     let lis = Array.from($(".item-list li"))
-    console.log(lis)
+    // console.log(lis)
     let liShow = Array.from($(".list-nav-li"))
-    console.log(liShow)
+    // console.log(liShow)
     lis.forEach(li => {
         $(li).mouseenter(function () {
             let idx = $(this).index()

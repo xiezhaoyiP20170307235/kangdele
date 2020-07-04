@@ -2,7 +2,7 @@ $(() => {
     // 1、发送网络请求获取服务器端的数据
     getDataAndRenderUi("default")
 
-    function getDataAndRenderUi(sort,page = 0) {
+    function getDataAndRenderUi(sort, page = 0) {
         $.ajax({
             url: "../server/getList.php",
             data: {
@@ -11,12 +11,12 @@ $(() => {
             },
             dataType: "json"
         }).done(data => {
-            console.log(typeof data)
+            // console.log(typeof data)
             let html = data.map(item => {
                 return `
             <li id="${item.good_id}">
             <div class="con-item-pic">
-                <a href="#"><img src="${item.src}" alt=""></a>
+                <a href="../src/cont.html?good_id=${item.good_id}"><img src="${item.src}" alt=""></a>
             </div>
             <div class="con-item-desc">
                 <p class="con-item-name">${item.name}</p>
@@ -133,7 +133,7 @@ $(() => {
             type: "get",
             url: "../server/getPageCount.php",
             success: function (data) {
-                console.log(data)
+                // console.log(data)
                 let pageStr = ""
                 for (let i = 0; i < data; i++) {
                     pageStr += `<li class="${i == 0 ? "cur" : ""}">${i + 1}</li>`
@@ -145,7 +145,7 @@ $(() => {
 
     // 7、分页功能
     $(".page-c-ul").on("click", "li", function () {
-        let page = $(this).text() * 1 -1
+        let page = $(this).text() * 1 - 1
         console.log(page)
         console.log("!!")
 
@@ -155,22 +155,46 @@ $(() => {
     })
 
     // 8、上一页和下一页的功能
-
-   $("#a-prev,#a-next").click(function() {
-    console.log("!!!!")
+    let page = $(".page-c-ul .cur").text() * 1;
+    $("#a-prev,#a-next").click(function () {
         /* 设置选中状态 */
-        let page = $(".cur").text() * 1 -1;
-        console.log("page",page)
+        console.log("page", page)
         console.log(this.id)
         if (this.id == "a-prev") {
-            page--;
-            console.log("page",page)
+            if (page == 0) {
+                return
+            } else {
+                page--;
+            }
         } else if (this.id == "a-next") {
-            page++;
+            if (page == 4) {
+                return
+            } else {
+                page++;
+            }
         }
 
-        $(".page-c-ul").eq(page).addClass("cur").siblings().removeClass("cur")
+        $(".page-c-ul > li").eq(page).addClass("cur").siblings().removeClass("cur")
         getDataAndRenderUi($(".cur02").data().sort, page)
     })
 
+    // 9、输入页码跳转
+    $(".input-page").click(function () {
+        console.log("!!!")
+
+        if ($(".page-d input").val() != "") {
+            let page = $(".page-d input").val() - 1
+            if (page > 4) {
+                return
+            } else {
+                console.log(page)
+                $(".page-c-ul > li").eq(page).addClass("cur").siblings().removeClass("cur")
+                getDataAndRenderUi($(".cur02").data().sort, page)
+            }
+
+        } else {
+            console.log("没")
+            return
+        }
+    })
 })
