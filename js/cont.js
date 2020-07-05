@@ -39,6 +39,15 @@ $(() => {
         `
         $(html03).appendTo(".showbox");
 
+        let floathtml = `
+            <div><img src="${data.src}" alt=""></div>
+            <div>
+                <h4>${data.name}</h4>
+                <span><span>￥</span>${data.price}</span>
+            </div>
+        `
+        $(".float-wrap").prepend(floathtml)
+
     }
     // 2、放大镜
     $(".showbox").on("mousemove", ".showbox-img", function (e) {

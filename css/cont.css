@@ -70,7 +70,7 @@ body{
     background: #FAFAFA;
     box-shadow: 0 0 5px #888;
     position: fixed;
-    /* display: none; */
+    display: none;
     top: 0px;
     width: 100%;
     z-index: 800;

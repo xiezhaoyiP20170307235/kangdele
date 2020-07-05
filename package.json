@@ -1,0 +1,23 @@
+{
+  "name": "kangdele",
+  "version": "1.0.0",
+  "description": "康德乐大药房",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiezhaoyiP20170307235/kangdele.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xiezhaoyiP20170307235/kangdele/issues"
+  },
+  "homepage": "https://github.com/xiezhaoyiP20170307235/kangdele#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0"
+  }
+}

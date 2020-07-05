@@ -56,8 +56,10 @@ $(() => {
         let val = $.trim($(this).val())
         if (eval(options[option_id].reg)) {
             $(this).parent().parent().children("i").css({ "display": "none" })
+            $(this).parent().parent().children("i").removeClass("form-group-error")
         } else {
             $(this).parent().parent().children("i").css({ "display": "block" })
+            $(this).parent().parent().children("i").addClass("form-group-error");
         }
     })
 
@@ -66,41 +68,37 @@ $(() => {
         /* [1] 检查表单验证是否全部都通过，如果有一个没有通过那么就return  */
         $("#userName,#userId,#passwordA,#passwordB,#imageCode").trigger("blur")
 
-        let iCss = Array.from($("i"))
-        console.log(iCss)
-        iCss.forEach(item => {
-            let discss = item.style.display
-            console.log(discss)
-            if (discss == "none") {
-                // console.log("全等")
-                return
-            } else {
-                // console.log("不全等")
-                alert("信息填写不完整")
+
+        if ($(".form-group-error").length != 0) {
+            console.log("错了")
+            alert("信息输入有误！")
+            return;
+        } else {
+            // console.log("ok")
+            /* [2] 发送网络请求去执行注册 */
+            let data = {
+                username: $.trim($("#userName").val()),
+                userid: $.trim($("#userId").val()),
+                password: md5($.trim($("#passwordA").val())).slice(0, 15)  //加密处理
             }
-        });
-        /* [2] 发送网络请求去执行注册 */
-        let data = {
-            username: $.trim($("#userName").val()),
-            userid: $.trim($("#userId").val()),
-            password: md5($.trim($("#passwordA").val())).slice(0, 15)  //加密处理
-        }
-        console.log(data)
-        // 发送ajax
-        $.ajax({
-            url: "../server/register.php",
-            type: "post",
-            data,
-            dataType: "json"
-        }).done(data => {
             console.log(data)
-            if (data.status == "success") {
-               alert("恭喜您，注册成功！")
-               location.href="../src/login.html"
-            } else {
-                alert(data.msg)
-            }
-        })
+            // 发送ajax
+            $.ajax({
+                url: "../server/register.php",
+                type: "post",
+                data,
+                dataType: "json"
+            }).done(data => {
+                console.log(data)
+                if (data.status == "success") {
+                    alert("恭喜您，注册成功！")
+                    location.href = "../src/login.html"
+                } else {
+                    alert(data.msg)
+                }
+            })
+        }
+
 
     })
 })

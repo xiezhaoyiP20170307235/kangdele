@@ -38,7 +38,7 @@ $(() => {
         $(".reggo").text("免费注册")
     }
 
-    $(".reggo").click(function() { 
+    $(".reggo").click(function () {
         if ($(this).text() == "免费注册") {
             location.href = "./register.html";
         } else {
@@ -47,8 +47,21 @@ $(() => {
             /* 重新加载 */
             window.location.reload();
         }
-        
+
     });
+
+    // 获取数据库商品数量
+    $.ajax({
+        type: "get",
+        url: "../server/getCart.php",
+        data: { user_id },
+        dataType: "json",
+        success: function (data) {
+            let cartspnum = data.length
+            $(".cart-sp-num").text(cartspnum)
+        }
+    });
+    
 
 
 

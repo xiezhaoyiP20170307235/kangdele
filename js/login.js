@@ -54,7 +54,6 @@ $(()=>{
      // /1、前端验证
     // 手机号码
     $("#userId").blur(function () {
-        console.log("@@@")
         if (isUserID() == false) {
             $(this).parent().css({ "border-color": "#ff5c4b" })
             $(this).siblings("label").css({ "display": "block" })
@@ -69,6 +68,7 @@ $(()=>{
         if (isPass() == false) {
             $(this).parent().css({ "border-color": "#ff5c4b" })
             $(this).siblings("label").css({ "display": "block" })
+            
             return
         } else {
             $(this).parent().css({ "border-color": "#ddd" })

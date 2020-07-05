@@ -4,13 +4,7 @@ let ord = 0
 let myTime = null
 $img = $(".banner-box ul li")
 $li = $(".banner-lis ul li")
-let hrefs = ["affiche-2020quanke-index-70-0.html",
-    "affiche-changbei-index-3-0.html",
-    "affiche-0-index-4-17805.html",
-    "affiche-moshadong2020-index-1-0.html",
-    "affiche-gjjdr2016-index-73-0.html",
-    "affiche-2020quanke-index-70-0.html",
-    "affiche-changbei-index-3-0.html",]
+let hrefs = []
 
 
 function autoPlay() {

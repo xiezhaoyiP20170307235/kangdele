@@ -9,6 +9,7 @@ $password = $_REQUEST["password"];
 
 // 查看id是否被注册
 $sql = "SELECT * FROM `user` WHERE user_id = '$userid'";
+mysqli_query($db,"SET NAMES utf8");
 $r = mysqli_query($db,$sql);
 
 $num = mysqli_num_rows($r);  //该方法得到的是记录的条数：$r["num_rows"]
